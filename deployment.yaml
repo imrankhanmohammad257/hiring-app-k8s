@@ -15,6 +15,6 @@ spec:
       containers:
         - name: hiring-app
           image: imrankhanmohammad257/hiring-app:latest
+          imagePullPolicy: Always   # ✅ force K8s to pull new latest image
           ports:
             - containerPort: 8080
-
